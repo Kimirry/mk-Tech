@@ -1,0 +1,103 @@
+@import url('contact.css');
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === GLOBAL STYLES === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937; /* Equivalent to text-gray-800 */
+  line-height: 1.7;
+}
+
+/* === ABOUT SECTION === */
+#about {
+  min-height: 100vh; /* Tailwind: min-h-screen */
+  padding: 3rem 1.5rem; /* Tailwind: py-12 px-6 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb; /* Tailwind: bg-gray-50 */
+  color: #1f2937; /* Tailwind: text-gray-800 */
+}
+
+/* === CONTAINER === */
+.max-w-3xl {
+  max-width: 768px;
+  width: 100%;
+  text-align: center;
+}
+
+/* === MAIN HEADING === */
+h2 {
+  font-size: 1.875rem; /* Tailwind: text-3xl */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem; /* Tailwind: md:text-4xl */
+  }
+}
+
+/* === SUBHEADING === */
+.text-lg {
+  font-size: 1.125rem;
+  color: #4b5563; /* Tailwind: text-gray-600 */
+  margin-bottom: 2.5rem;
+}
+
+/* === PARAGRAPHS === */
+p {
+  font-size: 1rem; /* Tailwind: text-base */
+  line-height: 1.7; /* Tailwind: leading-relaxed */
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+
+/* === SUBTITLE HEADING === */
+h3 {
+  font-size: 1.5rem; /* Tailwind: text-2xl */
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+/* === LIST === */
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+/* === CALL TO ACTION BUTTON === */
+a.inline-block {
+  display: inline-block;
+  background-color: #2563eb; /* Tailwind: bg-blue-600 */
+  color: white;
+  font-size: 0.875rem; /* Tailwind: text-sm */
+  font-weight: 600; /* Tailwind: font-semibold */
+  padding: 0.75rem 1.5rem; /* Tailwind: py-3 px-6 */
+  border-radius: 0.75rem; /* Tailwind: rounded-xl */
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+a.inline-block:hover {
+  background-color: #1e40af; /* Tailwind: hover:bg-blue-700 */
+}

@@ -1,0 +1,39 @@
+{
+  "services": [
+    {
+      "title": "Custom Website Design",
+      "description": "Fully responsive, visually appealing websites built from scratch — no templates, just design tailored to your brand.",
+      "image": "images/custom.webp"
+    },
+    {
+      "title": "Business & Portfolio Websites",
+      "description": "Professional websites for freelancers, small businesses, or personal brands — fast, modern, and clean.",
+      "image": "images/screenshot.png"
+    },
+    {
+      "title": "Landing Pages",
+      "description": "Focused, high-converting landing pages for products, events, or marketing campaigns.",
+      "image": "images/landing-pg.jpeg"
+    },
+    {
+      "title": "Website Redesign & Optimization",
+      "description": "Give your old site a new life — optimized for speed, appearance, and user experience.",
+      "image": "images/code1.jpg"
+    },
+    {
+      "title": "Maintenance & Updates",
+      "description": "Reliable support to keep your site running smoothly — from bug fixes to content updates.",
+      "image": "images/code3.jpg"
+    },
+    {
+      "title": "SEO & Technical Optimization",
+      "description": "We implement on-page and technical SEO best practices to improve search visibility and performance.",
+      "image": "images/optimization.webp"
+    },
+    {
+      "title": "Web Consultation",
+      "description": "We help you plan, strategize, and define the right digital approach for your business or idea.",
+      "image": "images/consultation.png"
+    }
+  ]
+}

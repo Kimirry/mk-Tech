@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | MK Tech</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+    <input type="text" name="_gotcha" style="display:none">
+</head>
+
+<body>
+    <div class="contacts">
+        <section class="intro">
+            <h2>Get in touch with mk Tech</h2>
+            <p>Ready to take your online presence to the next level?</p>
+        </section>
+        <div class="form-status"></div>
+
+        <div class="form">
+            <h3>Contact Us Today</h3>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/mvgrnajl" method="POST" id="contact-form">
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name" required />
+                <div class="phone-input-wrapper">
+                    <select id="country-select" name="country" required></select>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number" required />
+                </div>
+
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea><br>
+
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+
+        <footer>
+            <div class="links">
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="social-links">
+                    <h3>Social Links</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/marto_developer" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/marto_developer" target="_blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/marto_developer" target="_blank"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li><a href="mailto:mkservices@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="copy">&copy; 2025 MK Tech – All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
