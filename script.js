@@ -16,24 +16,25 @@ fetch('services.json')
   })
   .catch(error => console.error('Failed to load services:', error));
 
-// === Toggle mobile menu ===
 const hamburger = document.getElementById('hamburger');
-const navmenu = document.getElementById('menu');
+const navmenu = document.getElementById('menu-in'); // Make sure you're toggling the correct menu
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('fa-bars');
   hamburger.classList.toggle('fa-xmark');
-  navmenu.classList.toggle('active');
-});
+  
+  navmenu.classList.toggle('active'); // Toggle the class
 
-  if (navmenu.style.display === 'flex') {
-    navmenu.style.display = 'none';
-  } else {
-    navmenu.style.display = 'block';
+  if (navmenu.classList.contains('active')) {
+    navmenu.style.display = 'flex';
     navmenu.style.flexDirection = 'column';
     navmenu.style.gap = '1rem';
     navmenu.style.marginTop = '1rem';
+  } else {
+    navmenu.style.display = 'none';
   }
+});
+
 
 // === Phone dial code setup ===
 const countrySelect = document.getElementById('country-select');
