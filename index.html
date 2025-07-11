@@ -13,31 +13,37 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <!--AOS script-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!--Typed js-->
 </head>
-
 <body>
     <div class="background"></div>
     <div class="container" data-aos="slide-in" data-aos-duration="1000">
+
         <nav>
-            <div class="nav-bar">
-                <p data-aos="slide-right" data-aos-duration="1000"> mk Tech</p>
-                <div class="nav-links" id="menu" data-aos="slide-in" data-aos-duration="1000">
-                    <a href="about.html">About us</a>
-                    <a href="services.html">Services</a>
-                    <a href="about.html">Hire us</a>
-                    <a href="contact.html">Contact us</a>
-                </div>
-                <i class="fas fa-bars" id="hamburger"></i>
-            </div>
-        </nav>
+  <div class="nav-bar">
+    <p class="nav-links" data-aos="slide-right" data-aos-duration="1000">mk Tech</p>
+
+    <i class="fas fa-bars" id="hamburger" data-aos="slide-left" data-aos-duration="1000"></i>
+
+    <div class="nav-links" id="menu" data-aos="slide-left" data-aos-duration="1000">
+      <a href="about.html">About us</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">Hire us</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+  </div>
+</nav>
 
         <!--Main section of the page-->
         <section>
             <div class="main">
                 <div class="main-text">
-                    <span>
-                        <p>Simple. Smart. Stunning Web Design.</p>
-                        <p>Built with clean code. Designed for performance.</p>
-                        <p id="typed">Powered by mk Tech</p>
+                    <span class="text-only">
+                        <p class="line1">
+                        <span class="text1"> Simple. </span>
+                        <span class="text2"> Smart. </span>
+                        <span class="text3"> Stunning Web Design. </span>
+                       </p>
+                        <p class="line2">Built with clean code. Designed for performance.</p>
+                        <p class="line3">Powered by mk Tech</p>
                     </span>
                     <ul class="social-links">
                         <li><a href="https://www.linkedin.com/in/marto_developer" target="_blank"><i
@@ -58,7 +64,6 @@
         <script>
             AOS.init({
                 once: false,       // animation happens every time you scroll
-                duration: 1000     // animation duration in milliseconds
             });
         </script>
 </body>

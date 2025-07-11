@@ -20,19 +20,20 @@ fetch('services.json')
 const hamburger = document.getElementById('hamburger');
 const navmenu = document.getElementById('menu');
 
-hamburger?.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('fa-bars');
   hamburger.classList.toggle('fa-xmark');
+  navmenu.classList.toggle('active');
+});
 
   if (navmenu.style.display === 'flex') {
     navmenu.style.display = 'none';
   } else {
-    navmenu.style.display = 'flex';
+    navmenu.style.display = 'block';
     navmenu.style.flexDirection = 'column';
     navmenu.style.gap = '1rem';
     navmenu.style.marginTop = '1rem';
   }
-});
 
 // === Phone dial code setup ===
 const countrySelect = document.getElementById('country-select');
