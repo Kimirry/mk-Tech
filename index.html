@@ -2,72 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mk Tech</title>
     <script src="script.js" defer></script>
 
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" /> <!-- AOS CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <!--AOS script-->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!--Typed js-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        AOS.init({ once: false });
+    </script>
 </head>
 
-<body>
-    <div class="background"></div>
-    <div class="container" data-aos="slide-in" data-aos-duration="1000">
-        <nav>
-            <div class="nav-bar">
-                <div class="nav-links" id="menu"></div>
-                <p class="nav-links">mk Tech</p>
-                <i class="fas fa-bars" id="hamburger"></i>
+<body class="relative min-h-screen font-sans">
+    <div class="absolute inset-0 -z-10"></div>
 
-                <div class="nav-links" id="menu-in">
-                    <a href="about.html">About us</a>
-                    <a href="services.html">Services</a>
-                    <a href="about.html">Hire us</a>
-                    <a href="contact.html">Contact us</a>
-                </div>
+    <div class="relative mx-auto h-screen p-4" data-aos="slide-in" data-aos-duration="1000">
+        <!-- Navbar -->
+        <nav class="w-[95%] md:w-[70%] absolute mx-auto flex justify-around items-center bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-3 rounded-full relative">
+            <div class="hidden md:flex space-x-6 justify-start" id="menu"></div>
+            <p class="text-lg font-bold">mk Tech</p>
+            <i class="fas fa-bars md:hidden cursor-pointer" id="hamburger"></i>
+            <div id="menu-in"
+                class="hidden  md:flex flex-col md:flex-row absolute md:static top-16 right-4 bg-blue-600 md:bg-transparent p-4 md:p-0 rounded-xl w-1/2 md:w-auto z-50 space-y-3 md:space-y-0 md:space-x-6">
+                <a href="about.html" class="text-white hover:underline">About us</a>
+                <a href="services.html" class="text-white hover:underline">Services</a>
+                <a href="about.html" class="text-white hover:underline">Hire us</a>
+                <a href="contact.html" class="text-white hover:underline">Contact us</a>
             </div>
         </nav>
 
-        <!--Main section of the page-->
-        <section>
-            <div class="main">
-                <div class="main-text">
-                    <span class="text-only">
-                        <p class="line1">
-                            <span class="text1"> Simple. </span>
-                            <span class="text2"> Smart. </span>
-                            <span class="text3"> Stunning Web Design. </span>
-                        </p>
-                        <p class="line2">Built with clean code. Designed for performance.</p>
-                        <p class="line3"><strong>Powered by mk Tech</strong></p>
-                    </span>
-                    <ul class="social-links">
-                        <li><a href="https://www.linkedin.com/in/marto_developer" target="_blank"><i
-                                    class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://www.instagram.com/marto_developer" target="_blank"><i
-                                    class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/marto_developer" target="_blank"><i
-                                    class="fab fa-facebook"></i></a></li>
-                        <li><a href="ndichu719@gmail.com"><i class="fas fa-envelope"></i></a></li>
-                    </ul>
-                    <div class="link-services">
-                        <button class="drop-down"><a href="about.html"><strong><i
-                                        class="fas fa-chevron-down"></i></strong></a></button>
-                    </div>
-                </div>
+        <!-- Hero Section -->
+        <section class="flex flex-col text-center h-100vh items-center justify-center my-[10%]">
+            <div>
+                <p class="text-[clamp(2.5rem,5vw,3.75rem)] font-bold text-blue-600">
+                    <span class="text-blue-500">Simple.</span>
+                    <span class="text-purple-500">Smart.</span>
+                    <span class="text-indigo-600">Stunning Web Design.</span>
+                </p>
+                <p class="text-[clamp(1rem,3vw,2rem)] font-medium py-4">
+                    Built with clean code. Designed for performance.
+                </p>
+                <p class="text-[clamp(2rem,4vw,3.125rem)] font-bold">Powered by mk Tech</p>
+            </div>
+
+            <!-- Social Links -->
+            <ul class="flex space-x-4 absolute bottom-16 x-auto md:right-[3%] rounded-full">
+                <li><a href="https://www.linkedin.com/in/marto_developer" target="_blank"
+                        class="border border-blue-600 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white"><i
+                            class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/marto_developer" target="_blank"
+                        class="border border-blue-600 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/marto_developer" target="_blank"
+                        class="border border-blue-600 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white"><i
+                            class="fab fa-facebook"></i></a></li>
+                <li><a href="mailto:ndichu719@gmail.com"
+                        class="border border-blue-600 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white"><i
+                            class="fas fa-envelope"></i></a></li>
+            </ul>
+
+            <!-- Scroll Button -->
+        <div class="absolute bottom-8 transform -translate-x-1/2">
+                <a href="about.html">
+                    <button class="text-black text-[clamp(1.5rem,3vw,2.5rem)] font-bold bg-transparent">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </a>
             </div>
         </section>
     </div>
-
-    <script>
-        AOS.init({
-            once: false,       // animation happens every time you scroll
-        });
-    </script>
 </body>
 
 </html>

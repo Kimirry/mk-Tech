@@ -5,11 +5,27 @@ fetch('services.json')
     const container = document.getElementById('services');
     data.services.forEach(service => {
       const div = document.createElement('div');
-      div.classList.add('service-card');
+      container.classList.add(
+        'flex',
+         'flex-wrap',
+          'justify-center'
+        );
+      div.classList.add(
+        'service-card',
+        'border', 
+        'flex',
+        'flex-col',
+        'w-full',
+        'sm:w-1/2',
+        'md:w-1/3',
+        'wrap', 
+        'm-6', 
+        'rounded-lg'
+      );
       div.innerHTML = `
-        <img src="${service.image}" alt="${service.title}" class="service-img">
-        <h3>${service.title}</h3>
-        <p>${service.description}</p>
+        <img class=" h-auto w-full rounded" src="${service.image}" alt="${service.title}" class="service-img">
+        <h3 class="font-semibold text-center pt-4">${service.title}</h3>
+        <p class="text-center pb-4 font-sans">${service.description}</p>
       `;
       container.appendChild(div);
     });

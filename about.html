@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" /> <!-- AOS CSS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <!--AOS script-->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CDN-->
 </head>
 
 <body>
     <section id="about"
-        class="min-h-screen px-6 py-12 flex flex-col justify-center items-center bg-gray-50 text-gray-800" data-aos="slide-up" data-aos-duration="1000">
+        class="min-h-screen px-6 py-12 flex flex-col justify-center items-center bg-gray-50 text-gray-800"
+        data-aos="slide-up" data-aos-duration="1000">
         <div class="max-w-3xl text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Design With Purpose. Build With Clarity.</h2>
+            <h2
+                class="text-3xl md:text-4xl font-bold mb-4 text-center bg-gradient-to-r from-blue-600 to-pink-400 text-transparent bg-clip-text ">
+                Design With Purpose. Build With Clarity.</h2>
             <p class="text-lg text-gray-600 mb-10">Simple, smart, stunning web design — powered by MK Tech.</p>
 
             <p class="mb-6 text-base leading-relaxed">
@@ -24,9 +28,9 @@
                 and looks exceptional. In a time when websites are often templated, rushed, or bloated, we decided to do
                 things differently — to go back to what really matters: clarity, performance, and purpose.
             </p>
-            <button><a href="services.html">Our services</a></button>
+            <button><a href="services.html" class="border bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full text-white font-bold  px-4 py-2 outline-none">Our services</a></button>
 
-            <p class="mb-6 text-base leading-relaxed" data-aos="fade-in">
+            <p class="mb-6 text-base leading-relaxed pt-6" data-aos="fade-in">
                 Our approach is simple: we listen first. We want to understand what makes your brand tick, who you're
                 trying to reach, and what you're trying to solve. Then we get to work — not with shortcuts, but with
                 strategy, custom code, and a designer's eye. Our sites aren’t just functional — they tell stories, move
@@ -40,7 +44,7 @@
                 design, and clean development.
             </p>
 
-            <h3 class="text-2xl font-semibold mt-10 mb-4">Our Philosophy</h3>
+            <h3 class="text-2xl font-semibold mt-10 text-transparent bg-clip-text p-2 bg-gradient-to-r from-indigo-500 to-blue-600 mb-4">Our Philosophy</h3>
             <p class="mb-6 text-base leading-relaxed">
                 We believe great websites are simple — not simplistic. They load fast, work beautifully on every screen,
                 and reflect your brand in every pixel. They’re not just “online brochures.” They’re tools — for reaching
@@ -53,11 +57,10 @@
                 hand, with intention.
             </p>
 
-            <h3 class="text-2xl font-semibold mt-10 mb-4">Why MK Tech?</h3>
+            <h3 class="text-2xl font-semibold mt-10 mb-4 underline text-indigo-600">Why MK Tech?</h3>
 
-            <ul class="list-disc list-inside text-left text-base text-gray-700 mb-6">
-                <li> Precision matters to us — from spacing to typography, every detail is intentional.</li>
-                <li> We keep communication clear and simple — no buzzwords, just real collaboration.</li>
+            <ul class="list-inside text-left text-base text-gray-700 mb-6">
+                <li class="text-[clamp(1.5rem,2vw,2rem)] font-sans pb-4 text-center"> Precision matters to us — from spacing to typography, every detail is intentional.</li>
                 <li> We deliver swiftly without sacrificing quality — your time is valuable.</li>
                 <li> We design smart — with SEO, accessibility, and speed built into every line of code.</li>
                 <li> We care deeply — each project is treated like a passion, not a task.</li>
@@ -84,32 +87,30 @@
             </a>
         </div>
     </section>
-    <footer>
-        <div class="links">
-            <div class="quick-links">
-                <h3>Quick links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="social-links">
-                <h3>Social-links</h3>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/marto_developer" target="_blank"><i
-                                class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/marto_developer" target="_blank"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/marto_developer" target="_blank"><i
-                                class="fab fa-facebook"></i></a></li>
-                    <li><a href="mailto:mkservices@gmail.com"><i class="fas fa-envelope"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <p class="copy">&copy; 2025 mk Tech - All rights reserved.</p>
-    </footer>
+    <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-600 to-pink-500 to-indigo-500 mt-20 p-6 w-full">
+    <div class="flex justify-around mx-auto max-w-5xl text-white">
+      <div class="quick-links">
+        <h3 class="font-bold underline">Quick links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="social-links">
+        <h3 class="font-bold underline px-4">Social-links</h3>
+        <ul class="flex">
+          <li><a href="https://www.linkedin.com/in/marto_developer" target="_blank"><i class="fab fa-linkedin p-4"></i></a></li>
+          <li><a href="https://www.instagram.com/marto_developer" target="_blank"><i class="fab fa-instagram p-4"></i></a></li>
+          <li><a href="https://www.facebook.com/marto_developer" target="_blank"><i class="fab fa-facebook p-4"></i></a></li>
+          <li><a href="mailto:mkservices@gmail.com"><i class="fas fa-envelope p-4"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy text-center pt-10 text-white">&copy; 2025 MK Tech - All rights reserved.</p>
+  </footer>
 
     <script>
         AOS.init({
