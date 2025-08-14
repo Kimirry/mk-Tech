@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mk Tech</title>
+    <title>Litch Tech</title>
     <script src="script.js" defer></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -15,59 +15,68 @@
         AOS.init({ once: false });
     </script>
 </head>
-
-<body class="relative min-h-screen font-sans bg-gradient-to-r from-white via-blue-200 to-purple-300">
+<body class="relative min-h-screen font-sans bg-[url('/images/spotlight.jpg')] backdrop-brightness-[0.2] bg-center bg-cover">
     <div class="absolute inset-0 -z-10"></div>
 
     <div class="relative mx-auto h-screen p-4" data-aos="slide-in" data-aos-duration="1000">
         <!-- Navbar -->
-        <nav class="w-[95%] md:w-[70%] absolute mx-auto flex justify-around items-center bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6 py-3 rounded-full relative">
-            <div class="hidden md:flex space-x-6 justify-start" id="menu"></div>
-            <p class="text-lg font-bold">mk Tech</p>
+         <div class="hidden md:flex space-x-6 justify-start" id="menu"></div>
+        <nav class=" flex justify-between align-center lg:mt-[4%]">
+            <p class="text-xl  text-white font-bold flex-start md:pl-[15%] underline">Litch Tech</p>
             <i class="fas fa-bars md:hidden cursor-pointer" id="hamburger"></i>
             <div id="menu-in"
-                class="hidden  md:flex flex-col md:flex-row absolute md:static top-16 right-4 bg-blue-600 md:bg-transparent p-4 md:p-0 rounded-xl w-1/2 md:w-auto z-50 space-y-3 md:space-y-0 md:space-x-6">
-                <a href="about.html" class="text-white hover:underline">About us</a>
-                <a href="services.html" class="text-white hover:underline">Services</a>
-                <a href="about.html" class="text-white hover:underline">Hire us</a>
-                <a href="contact.html" class="text-white hover:underline">Contact us</a>
+                class="hidden text-center text-[clamp(0.5rem,1vw,1.2rem)] md:flex flex-col lg:pr-[15%] md:flex-row absolute md:static top-16 right-4 bg-blue-600 md:bg-transparent p-4 md:p-0 rounded-xl w-1/2 md:w-auto z-50 space-y-3 md:space-y-0 md:space-x-6">
+                <a href="about.html" class="text-white border-2 p-2 px-4 rounded-full">About us</a>
+                <a href="services.html" class="text-white border-2 p-2 px-4 rounded-full">Services</a>
+                <a href="about.html" class="text-white border-2 p-2  px-4 rounded-full">Hire us</a>
+                <a href="contact.html" class="text-white border-2 p-2  px-4 rounded-full">Contact us</a>
             </div>
         </nav>
 
         <!-- Hero Section -->
-        <section class="flex flex-col text-center h-100vh items-center justify-center my-[10%]">
+        <section class="flex flex-col text-center items-center my-[5%]">
             <div>
                 <p class="text-[clamp(2.5rem,5vw,3.75rem)] font-bold text-blue-600">
-                    <span class="text-blue-500">Simple.</span>
-                    <span class="text-purple-500">Smart.</span>
-                    <span class="text-indigo-600">Stunning Web Design.</span>
+                    <span class="text-blue-600">Simple.</span>
+                    <span class="text-blue-600">Smart.</span>
+                    <span class="text-blue-600">Stunning Web Design.</span>
                 </p>
-                <p class="text-[clamp(1rem,3vw,2rem)] font-medium py-4">
-                    Built with clean code. Designed for performance.
+                <p class="text-[clamp(0.5rem,2vw,1.4rem)] font-medium py-4 text-blue-600">
+                    Building high-performance websites with clean code 
                 </p>
-                <p class="text-[clamp(2rem,4vw,3.125rem)] font-bold">Powered by mk Tech</p>
+                <p class="text-[clamp(1.5rem,3vw,2.7rem)] font-bold text-blue-600">Powered by Litch Web Design</p>
+            </div>
+
+            <div class="mt-20 mx-">
+                <button><a href="services.html" class="border rounded-full text-white font-bold  px-10 py-2 outline-none">
+                Our services
+                </a></button>
+
+                <button><a href="services.html" class="border rounded-full text-white font-bold  px-10 py-2 outline-none">
+                Get in touch
+                </a></button>
             </div>
 
             <!-- Social Links -->
-            <ul class="flex space-x-4 absolute bottom-[25%] x-auto md:right-[3%] rounded-full">
+            <ul class="flex space-x-4 absolute bottom-[22%] x-auto md:right-[6%] ">
                 <li><a href="https://www.linkedin.com/in/marto_developer" target="_blank"
-                        class="border border-blue-600 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white"><i
-                            class="fab fa-linkedin"></i></a></li>
+                        class="border border-blue-600 p-3 rounded-md text-blue-600 hover:bg-blue-600 hover:text-white"><i
+                            class="fab fa-linkedin text-xl"></i></a></li>
                 <li><a href="https://www.instagram.com/marto_developer" target="_blank"
-                        class="border border-blue-600 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white"><i
-                            class="fab fa-instagram"></i></a></li>
+                        class="border border-blue-600 p-3 rounded-md text-blue-600 hover:bg-blue-600 hover:text-white"><i 
+                            class="fab fa-instagram text-xl"></i></a></li>
                 <li><a href="https://www.facebook.com/marto_developer" target="_blank"
-                        class="border border-blue-600 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white"><i
-                            class="fab fa-facebook"></i></a></li>
+                        class="border border-blue-600 p-3 rounded-md text-blue-600 hover:bg-blue-600 hover:text-white"><i
+                            class="fab fa-facebook text-xl"></i></a></li>
                 <li><a href="mailto:ndichu719@gmail.com"
-                        class="border border-blue-600 p-3 rounded-full text-blue-600 hover:bg-blue-600 hover:text-white"><i
-                            class="fas fa-envelope"></i></a></li>
+                        class="border border-blue-600 p-3 rounded-md text-blue-600 hover:bg-blue-600 hover:text-white"><i
+                            class="fas fa-envelope text-xl"></i></a></li>
             </ul>
 
             <!-- Scroll Button -->
-        <div class="absolute bottom-8 transform -translate-x-1/2">
+        <div class="absolute bottom-8 transform">
                 <a href="about.html">
-                    <button class="text-black text-[clamp(1.5rem,3vw,2.5rem)] font-bold bg-transparent">
+                    <button class="text-blue-600 text-[clamp(1.5rem,3vw,2.5rem)] font-bold bg-transparent">
                         <i class="fas fa-chevron-down"></i>
                     </button>
                 </a>
