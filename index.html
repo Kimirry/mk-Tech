@@ -15,15 +15,15 @@
         AOS.init({ once: false });
     </script>
 </head>
-<body class="relative min-h-screen font-sans bg-[url('/images/spotlight.jpg')] backdrop-brightness-[0.2] bg-center bg-cover">
-    <div class="absolute inset-0 -z-10"></div>
+<body class="relative min-h-screen font-sans bg-[url('/images/spotlight.jpg')] bg-center bg-cover"></body>
+    <div class="absolute inset-0 bg-black/60"></div>
 
     <div class="relative mx-auto h-screen p-4" data-aos="slide-in" data-aos-duration="1000">
         <!-- Navbar -->
-         <div class="hidden md:flex space-x-6 justify-start" id="menu"></div>
+         <div class="hidden md:flex space-x-6 justify-start " id="menu"></div>
         <nav class=" flex justify-between align-center lg:mt-[4%]">
             <p class="text-xl  text-white font-bold flex-start md:pl-[15%] underline">Litch Tech</p>
-            <i class="fas fa-bars md:hidden cursor-pointer" id="hamburger"></i>
+            <i class="fas fa-bars md:hidden cursor-pointer text-white" id="hamburger"></i>
             <div id="menu-in"
                 class="hidden text-center text-[clamp(0.5rem,1vw,1.2rem)] md:flex flex-col lg:pr-[15%] md:flex-row absolute md:static top-16 right-4 bg-blue-600 md:bg-transparent p-4 md:p-0 rounded-xl w-1/2 md:w-auto z-50 space-y-3 md:space-y-0 md:space-x-6">
                 <a href="about.html" class="text-white border-2 p-2 px-4 rounded-full hover:bg-white hover:text-black">About us</a>
@@ -41,13 +41,13 @@
                     <span class="text-blue-600">Smart.</span>
                     <span class="text-blue-600">Stunning Web Design.</span>
                 </p>
-                <p class="text-[clamp(0.5rem,2vw,1.4rem)] font-medium py-4 text-blue-600">
+                <p class="text-[clamp(1rem,2vw,1.4rem)] font-medium py-4 text-blue-600">
                     Building high-performance websites with clean code 
                 </p>
                 <p class="text-[clamp(1.5rem,3vw,2.7rem)] font-bold text-blue-600">Powered by Litch Web Design</p>
             </div>
 
-            <div class="mt-20 block">
+            <div class="mt-20 block md-flex flex-wrap">
                 <button><a href="services.html" class="border rounded-full text-white font-bold  px-10 py-2 outline-none hover:bg-white hover:text-black">
                 Our services
                 </a></button>
@@ -74,9 +74,9 @@
             </ul>
 
             <!-- Scroll Button -->
-        <div class="absolute bottom-8 transfor ">
+        <div class="absolute bottom-8 transform">
                 <a href="about.html">
-                    <button class="text-blue-600 text-[clamp(1.5rem,3vw,2.5rem)] font-bold bg-transparent hover:border-2 w-14 h-14 items-center text-center">
+                    <button class="text-blue-600 text-[clamp(1.5rem,3vw,2.5rem)] font-bold bg-transparent">
                         <i class="fas fa-chevron-down"></i>
                     </button>
                 </a>
