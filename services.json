@@ -2,38 +2,31 @@
   "services": [
     {
       "title": "Custom Website Design",
-      "description": "Fully responsive, visually appealing websites built from scratch — no templates, just design tailored to your brand.",
-      "image": "images/custom.webp"
+      "description": "Fully responsive, visually appealing websites built from scratch — no templates, just design tailored to your brand."
     },
     {
       "title": "Business & Portfolio Websites",
-      "description": "Professional websites for freelancers, small businesses, or personal brands — fast, modern, and clean.",
-      "image": "images/screenshot.png"
+      "description": "Professional websites for freelancers, small businesses, or personal brands — fast, modern, and clean."
     },
     {
       "title": "Landing Pages",
-      "description": "Focused, high-converting landing pages for products, events, or marketing campaigns.",
-      "image": "images/landing-pg.jpeg"
+      "description": "Focused, high-converting landing pages for products, events, or marketing campaigns."
     },
     {
       "title": "Website Redesign & Optimization",
-      "description": "Give your old site a new life — optimized for speed, appearance, and user experience.",
-      "image": "images/code1.jpg"
+      "description": "Give your old site a new life — optimized for speed, appearance, and user experience."
     },
     {
       "title": "Maintenance & Updates",
-      "description": "Reliable support to keep your site running smoothly — from bug fixes to content updates.",
-      "image": "images/code3.jpg"
+      "description": "Reliable support to keep your site running smoothly — from bug fixes to content updates."
     },
     {
       "title": "SEO & Technical Optimization",
-      "description": "We implement on-page and technical SEO best practices to improve search visibility and performance.",
-      "image": "images/optimization.webp"
+      "description": "We implement on-page and technical SEO best practices to improve search visibility and performance."
     },
     {
       "title": "Web Consultation",
-      "description": "We help you plan, strategize, and define the right digital approach for your business or idea.",
-      "image": "images/consultation.png"
+      "description": "We help you plan, strategize, and define the right digital approach for your business or idea."
     }
   ]
 }
